@@ -1,0 +1,3 @@
+2020-07-26 21:45: New CA certificate 1595771119980 [C=US,ST=NY,L=Gitblit,O=Gitblit,OU=Gitblit,CN=Gitblit Certificate Authority]
+2020-07-26 21:45: new certificate revocation list created
+2020-07-26 21:45: New SSL certificate 1595771121303 [C=US,ST=NY,L=Gitblit,O=Gitblit,OU=Gitblit,CN=localhost]
