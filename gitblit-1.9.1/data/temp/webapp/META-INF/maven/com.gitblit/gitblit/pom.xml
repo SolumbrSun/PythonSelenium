@@ -453,7 +453,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <dependency>
       <groupId>org.apache.tika</groupId>
       <artifactId>tika-core</artifactId>
-      <version>1.5</version>
+      <version>1.22</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
