@@ -1,0 +1,8 @@
+userNull:
+  username: ""
+  password: ""
+  assertText: "请输入账号密码"
+passNull:
+  username1: "admin888"
+  password1: ""
+  assertText1: "请输入账号密码"

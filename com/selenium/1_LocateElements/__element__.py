@@ -35,7 +35,7 @@ driver.find_element_by_css_selector("input#kw").send_keys('创世纪')
 driver.find_element_by_css_selector("input.s_ipt").send_keys('神创纪')
 
 # 通过find_element_by_css_selector()定位②
-# 【>】表示标签的层级关系：寻找id属性值为form的便签下的span便签下面class属性值等于s_ipt的元素
+# 【>】表示标签的层级关系：寻找id属性值为form的便签下的span便签下面input标签且class属性值等于s_ipt的元素
 driver.find_element_by_css_selector("form#form>span>input.s_ipt").send_keys('魔神传')
 # 可用空格替代【>】
 driver.find_element_by_css_selector("form#form span input.s_ipt").send_keys('魔神传')

@@ -1,8 +1,11 @@
-import os,time,unittest
+import os
+import time
+import unittest
 from HTMLTestRunner import HTMLTestRunner
+
 def getAllCases():
    '''获取tesTcase下面的所有测试模块'''
-   Testsuite = unittest.defaultTestLoader.discover(start_dir=os.path.join(os.path.dirname(__file__)), pattern='test*.py') # pattern为参数名称，从start_dir中获取相关文件
+   Testsuite = unittest.defaultTestLoader.discover(start_dir=os.path.join(os.path.dirname(__file__)), pattern='__TestCases__.py') # pattern为参数名称，从start_dir中获取相关文件
    # os.path.dirname(__file__)——当前文件的绝对路径（不含当前文件名称）；与之相对的是os.path.basename(__file__)——当前文件名称
    return Testsuite
 
