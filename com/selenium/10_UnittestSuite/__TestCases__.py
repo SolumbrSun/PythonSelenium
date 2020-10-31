@@ -1,4 +1,4 @@
-from __TestSuite__ import *
+from __TestSuite__ import TestWebUI
 
 class TestModle(TestWebUI):
     def test_QQLogin(self):

@@ -29,7 +29,7 @@ t.sleep(2)
 # js_submit = 'document.getElementsByClassName("sign-in-button")[0].click();'
 # dr.execute_script(js_submit)
 
-# JQery是JavaScript的一个库，其中的css选择器常用于元素定位中的策略，使用css选择器定位 登录按钮
-# .sign-in-button 表示 class = sign-in-button
+# JQery是JavaScript的一个库，其中的css选择器常用于元素定位中的策略，JQuery的定位语法课统一用document.querySelectorAll()来表示
+# 使用css选择器定位 登录按钮 .sign-in-button 表示 class = sign-in-button
 css_btn = 'document.querySelectorAll(".sign-in-button")[0].click();'
 dr.execute_script(css_btn)

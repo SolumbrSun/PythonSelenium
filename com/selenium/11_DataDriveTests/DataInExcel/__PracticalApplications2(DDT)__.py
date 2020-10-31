@@ -3,18 +3,17 @@ import ddt,unittest
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait      # 导入WebDriverWait类
-from selenium.webdriver.support import expected_conditions as EC  # 导入EC模块
+from selenium.webdriver.support.ui import WebDriverWait             # 导入WebDriverWait类
+from selenium.webdriver.support import expected_conditions as EC    # 导入EC模块
 
 def readData():
-    book  = xlrd.open_workbook('datainfo.xlsx','r')  # 读取datainfo.xlsx表
-    table = book.sheet_by_index(0)               # 获取第一个sheet
+    book  = xlrd.open_workbook('datainfo.xlsx','r')                     # 读取datainfo.xlsx表
+    table = book.sheet_by_index(0)                                      # 获取第一个sheet
     newRows = []
-    for rowValue in range(1, table.nrows):  # table.nrows 获取该sheet中的有效行数
-        newRows.append(table.row_values(rowValue, 0, table.ncols))  # table.ncols 获取该sheet中的有效列数
+    for rowValue in range(1, table.nrows):                              # table.nrows 获取该sheet中的有效行数
+        newRows.append(table.row_values(rowValue, 0, table.ncols))      # table.ncols 获取该sheet中的有效列数
     # print(newRows)
     return newRows             #返回新的newRows
-
 
 @ddt.ddt
 class TestLogin(unittest.TestCase):
@@ -38,7 +37,7 @@ class TestLogin(unittest.TestCase):
 
     @ddt.data(*readData())  # 调用readData()方法，生成测试数据newRows，然后返回@ddt.data装饰器
     @ddt.unpack
-    def test_souhuLogin(self, user, passwd, text):
+    def test_souhuLogin(self,user,passwd,text):
         self.driver.get(self.testUrl)
         sleep(3)
         self.by_css('.addFocus.ipt-account.ng-pristine.ng-valid').send_keys(user)

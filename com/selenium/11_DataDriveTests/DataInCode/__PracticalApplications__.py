@@ -37,7 +37,7 @@ class TestLogin(unittest.TestCase):
 
     @ddt.data(*readData())
     @ddt.unpack
-    def test_souhuLogin(self, user, passwd, text):
+    def test_souhuLogin(self,user,passwd,text):
         self.driver.get(self.testUrl)
         sleep(3)
         self.by_css('.addFocus.ipt-account.ng-pristine.ng-valid').send_keys(user)

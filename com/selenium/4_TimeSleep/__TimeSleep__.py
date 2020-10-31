@@ -1,5 +1,5 @@
-from time import sleep
-from selenium import webdriver
+# from time import sleep
+# from selenium import webdriver
 # dr = webdriver.Chrome()
 # dr.get("https://www.baidu.com")
 
@@ -13,7 +13,7 @@ from selenium import webdriver
 
 # ---------------------------------------------------------------------------------------
 
-# 显示等待：在设置的时间内等到某个元素出现或是某个元素就触发事件，如果超出时长则抛出异常
+# # 显式等待：在设置的时间内等到某个元素出现或是某个元素就触发事件，如果超出时长则抛出异常
 from selenium import webdriver
 from selenium.webdriver.common.by import By   #导入By类
 from selenium.webdriver.support.ui import WebDriverWait  #导入WebDriverWait类

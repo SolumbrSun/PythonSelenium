@@ -18,5 +18,5 @@ driver.find_element_by_xpath("//*[@id='1']/h3/a").click()
 driver.get('https://tieba.baidu.com/f?kw=%C9%F8%CD%B8&fr=ala0&tpl=5')
 # t.sleep(3)
 # 操作跳转后所在窗口的页面元素
-driver.find_element_by_name("kw1").send_keys('大道朝天')
+# driver.find_element_by_name("kw1").send_keys('大道朝天')
 driver.find_element_by_link_text("进入贴吧").click()
